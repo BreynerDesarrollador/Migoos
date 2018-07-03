@@ -1,0 +1,42 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.18",
+        "bootstrap": "^4.0.0",
+        "browser-sync": "^2.24.4",
+        "browser-sync-webpack-plugin": "2.0.1",
+        "cross-env": "^5.1",
+        "jquery": "^3.2",
+        "laravel-mix": "^2.0",
+        "lodash": "^4.17.4",
+        "popper.js": "^1.12",
+        "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "ajax-form": "^2.1.4",
+        "bootstrap4-datetimepicker": "^5.2.3",
+        "date-fns": "^1.29.0",
+        "ionicons": "^4.2.0",
+        "jquery-form": "^4.2.2",
+        "jquery-mask-plugin": "^1.14.15",
+        "jquery-validation": "^1.17.0",
+        "select2": "^4.0.6-rc.1",
+        "select2-bootstrap4-theme": "^1.0.0",
+        "toastr": "^2.1.4",
+        "v-tooltip": "^2.0.0-rc.33",
+        "vue-router": "^3.0.1",
+        "vue-spinner": "^1.0.3",
+        "vue-timeago": "^4.0.2",
+        "vue2-google-maps": "^0.9.7",
+        "yarn": "^1.7.0"
+    }
+}

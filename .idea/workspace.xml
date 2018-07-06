@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868ee40-c9a0-4242-93f6-782d3cfad29b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/eventosciudad.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/assets/js/components/home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/emails/verificacion.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/migoos.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/migoos.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/img2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail330/JiE6Wk2cQmhf9CaQZMWD3QCEa0Ijl24RQc6PRbqV.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail330/UFoxlzXPr0gPcRi2WQGz3Cd3siLCQ2eKCOUC2PYv.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail330/XwZ9abQJzceJdfJcjVMKeQPLa03IoTPVHj4crLLx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail330/gXSV4n1iY7DLG2WIio3xZeCf1qnZSoi919ujGXJP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail646/JiE6Wk2cQmhf9CaQZMWD3QCEa0Ijl24RQc6PRbqV.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail646/UFoxlzXPr0gPcRi2WQGz3Cd3siLCQ2eKCOUC2PYv.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail646/XwZ9abQJzceJdfJcjVMKeQPLa03IoTPVHj4crLLx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/storage/thumbnail/thumbnail646/gXSV4n1iY7DLG2WIio3xZeCf1qnZSoi919ujGXJP.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/eventos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/eventos.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/migoos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/migoos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,20 +49,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+            <state relative-caret-position="334">
+              <caret line="30" column="45" lean-forward="true" selection-end-line="46" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailconfirmacion.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="emailconfirmacion.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="323">
+              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -141,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="251">
-              <caret line="191" column="37" lean-forward="true" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
+              <caret line="191" column="37" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -330,7 +290,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="160" />
     <option name="height" value="39" />
   </component>
@@ -595,15 +555,15 @@
       <workItem from="1530722483866" duration="4688000" />
       <workItem from="1530734836646" duration="624000" />
       <workItem from="1530801477439" duration="20065000" />
-      <workItem from="1530888633917" duration="10236000" />
+      <workItem from="1530888633917" duration="10431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158752000" />
+    <option name="totallyTimeSpent" value="158947000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -925,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/enviarverificacionemail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -945,7 +898,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
-          <caret line="191" column="37" lean-forward="true" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
+          <caret line="191" column="37" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -958,8 +911,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="323">
+          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="30" column="45" lean-forward="true" selection-end-line="46" />
         </state>
       </provider>
     </entry>

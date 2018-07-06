@@ -84,7 +84,7 @@ class AdminController extends Controller
             $ruta1 = "img/storage/thumbnail/thumbnail646/";
             $path = $request->imagen->store($ruta1, 'local');
             $image = Image::make($path);
-            $image->resize(646, 485);
+            //$image->resize(646, 485);
             $image->save($path);
             $cont = count(explode('/', $path));
             return explode('/', $path)[$cont - 1];
@@ -100,7 +100,7 @@ class AdminController extends Controller
             $rutacompleta = $request->imagen->storeAs($ruta1, $nombre, 'local');
             //Creamos una instancia de la libreria instalada
             $image = \Image::make($rutacompleta);
-            $image->resize(330, 250);
+            $image->resize(330, 160);
             $image->save($rutacompleta);
         } catch (Excepcion $es) {
             throw $es;

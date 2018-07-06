@@ -120,6 +120,7 @@ return [
     */
 
     'providers' => [
+        Laravel\Socialite\SocialiteServiceProvider::class,
         Laraveles\Spanish\SpanishServiceProvider::class,
         Reliese\Coders\CodersServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
@@ -176,6 +177,7 @@ return [
     */
 
     'aliases' => [
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Image' => Intervention\Image\Facades\Image::class,
 
         'App' => Illuminate\Support\Facades\App::class,

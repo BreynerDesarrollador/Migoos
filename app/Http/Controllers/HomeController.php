@@ -74,4 +74,18 @@ class HomeController extends Controller
             throw $es;
         }
     }
+    public function cargarciudades(Request $request)
+    {
+        $buscar=$request->input('keyword');
+        $datos=DB::select("call  sp_cargarciudad('$buscar')");
+        return response()->json($datos);
+        
+    }
+    public function buscareventociudad(){
+        try{
+
+        }catch (Excepcion $es){
+            throw new $es;
+        }
+    }
 }

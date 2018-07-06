@@ -34,5 +34,19 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+        'client_id' => '1812889292256171',
+        'client_secret' => 'b9b1b82396af0f7b6b6cd743e085825f',
+        'redirect' => 'http://localhost:8000/auth/facebook/callback'
+    ],
+    'google' => [
+        //Id suministrado por google
+        'client_id'     => '504744434203-26pbj9oojmjjkbpidmsf81rtjulceplp.apps.googleusercontent.com',
+        //Secret suministrado por google
+        'client_secret' => 'MbSmczYAbl9H8hf-pTQC8ZGm',
+        //Página a la que sera redireccionado el navegador cuando el login se exitoso
+        //Ejemplo: http://midominio.com/social/handle/google
+        'redirect'      => 'http://localhost:8000/auth/google/callback'
+    ]
 
 ];

@@ -11,6 +11,7 @@ import * as VueGoogleMaps from 'vue2-google-maps'
 import bounceSpinner from 'vue-spinner/src/BounceLoader.vue'
 import VTooltip from 'v-tooltip'
 import VueTimeago from 'vue-timeago'
+import Autocomplete from './components/autocomplete.vue'
 
 require('./bootstrap');
 require('toastr');
@@ -24,7 +25,7 @@ Vue.use(VTooltip);
 Vue.use(VueGoogleMaps, {
     load: {
         key: 'AIzaSyBF_SYKs0H5kKG9zK1RDoIdLDNKAd9859w',
-        libraries: 'visualization', // This is required if you use the Autocomplete plugin
+        libraries: 'places,drawing,visualization', // This is required if you use the Autocomplete plugin
         // OR: libraries: 'places,drawing'
         // OR: libraries: 'places,drawing,visualization'
         // (as you require)
@@ -53,14 +54,25 @@ var router =new VueRouter({
         },
         {
             path:'/app/home/',
-            name:'home',
+            name:'homeadmin',
             component:require('./components/admineventos.vue')
         },
         {
             path:'/app/home/edit/:id',
             name:'edit',
             component:require('./components/edit.vue')
-        }
+        },
+
+        {
+            path:'/',
+            name:'home',
+            component:require('./components/home.vue')
+        },
+        {
+            path:'/b/:tipo/:ciudad/',
+            name:'eventosciudad',
+            component:require('./components/eventosciudad.vue')
+        },
     ]
 });
 
@@ -70,6 +82,8 @@ Vue.component('Index', require('./components/index.vue'));
 Vue.component('SelectVue', require('./components/select.vue'));
 Vue.component('Eventos', eventos);
 Vue.component('LoaderSpinner', bounceSpinner);
+Vue.component('Autocompletar', Autocomplete);
+Vue.component('App', require('./components/app.vue'));
 
 const app = new Vue({
     router

@@ -36,7 +36,9 @@
         "vue-router": "^3.0.1",
         "vue-spinner": "^1.0.3",
         "vue-timeago": "^4.0.2",
+        "vue2-autocomplete-js": "^0.2.2",
         "vue2-google-maps": "^0.9.7",
+        "vue2-typeahead": "^1.0.32",
         "yarn": "^1.7.0"
     }
 }

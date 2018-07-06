@@ -15,7 +15,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .extract(['vue'])
    .sass('resources/assets/sass/app.scss', 'public/css');
 
-mix.browserSync('http://127.0.0.1:8000');
+//mix.browserSync('http://127.0.0.1:8000');
 
 if (mix.inProduction()) {
     mix.version();

@@ -14,12 +14,22 @@
 Route::get('/', 'HomeController@migoos')->name('migoos');
 Route::post('/cargareventos', 'HomeController@cargareventos')->name('cargareventos');
 Route::get('/cargarcombos', 'HomeController@cargarcombos')->name('cargarcombos');
+Route::get('/cargarciudades', 'HomeController@cargarciudades')->name('cargarciudades');
+Route::get('b/{any}', 'HomeController@migoos')->name('b/{any}')->where('any', '.*');
+
+Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider')->name('social.auth');
+Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
+Route::get('/verificaremail/{token}', 'Auth\RegisterController@verificaremail');
+
+Route::get('email',function (){
+   return view('emails.emailverificacion')->with(['nombre'=>'Breyner Perez','email_token'=>'breyner@hotmail.com']);
+});
 //Route::get('/app/{ciudad}', 'HomeController@app')->name('app');
 
 Auth::routes();
 
 Route::get('mail', 'HomeController@mail');
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['authuser']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/app/{any}', 'AdminController@index')
         ->middleware('is_admin')

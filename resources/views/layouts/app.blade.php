@@ -10,8 +10,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/principal.css') }}" rel="stylesheet">
+    <link href="{{ asset_secure('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset_secure('css/principal.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
           crossorigin="anonymous">
@@ -182,9 +182,9 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="/js/manifest.js"></script>
-<script src="/js/vendor.js"></script>
-<script src="/js/app.js"></script>
+<script src="{{asset_secure('/js/manifest.js')}}"></script>
+<script src="{{asset_secure('/js/vendor.js')}}"></script>
+<script src="{{asset_secure('/js/app.js')}}"></script>
 
 @yield('script')
 @if($errors->any())

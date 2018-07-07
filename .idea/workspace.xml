@@ -43,8 +43,8 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="292">
+              <caret line="186" column="38" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -302,7 +302,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="160" />
     <option name="height" value="39" />
   </component>
@@ -568,12 +568,12 @@
       <workItem from="1530734836646" duration="624000" />
       <workItem from="1530801477439" duration="20065000" />
       <workItem from="1530888633917" duration="12196000" />
-      <workItem from="1530975227971" duration="1324000" />
+      <workItem from="1530975227971" duration="1490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162036000" />
+    <option name="totallyTimeSpent" value="162202000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -931,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="292">
+          <caret line="186" column="38" selection-start-line="186" selection-start-column="38" selection-end-line="186" selection-end-column="38" />
         </state>
       </provider>
     </entry>

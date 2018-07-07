@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d868ee40-c9a0-4242-93f6-782d3cfad29b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,19 +20,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="1020">
               <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
             </state>
           </provider>
@@ -40,7 +32,7 @@
       <file leaf-file-name="RegistersUsers.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="748">
               <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
               <folding>
                 <element signature="e#46#83#0#PHP" expanded="true" />
@@ -52,8 +44,8 @@
       <file leaf-file-name=".env" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="30" column="45" lean-forward="true" selection-end-line="46" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -62,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -79,7 +71,7 @@
       <file leaf-file-name="EmailVerificacion.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Mail/EmailVerificacion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="289">
               <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
@@ -88,7 +80,7 @@
       <file leaf-file-name="enviarverificacionemail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Jobs/enviarverificacionemail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="476">
               <caret line="34" column="36" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="36" />
               <folding>
                 <element signature="e#28#59#0#PHP" expanded="true" />
@@ -97,10 +89,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="services.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/services.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="39" column="67" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+              <folding>
+                <element signature="e#223#269#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="emailverificacion.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="3162">
               <caret line="191" column="37" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
             </state>
           </provider>
@@ -176,10 +189,10 @@
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Jobs/enviarverificacionemail.php" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/verificacion.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
   </component>
@@ -290,7 +303,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="160" />
     <option name="height" value="39" />
   </component>
@@ -555,15 +568,16 @@
       <workItem from="1530722483866" duration="4688000" />
       <workItem from="1530734836646" duration="624000" />
       <workItem from="1530801477439" duration="20065000" />
-      <workItem from="1530888633917" duration="10431000" />
+      <workItem from="1530888633917" duration="12196000" />
+      <workItem from="1530975227971" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158947000" />
+    <option name="totallyTimeSpent" value="161311000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -573,7 +587,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32817337" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18835099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913767" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -705,13 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/components/home.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -783,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/services.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="67" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -814,9 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
-          <folding>
-            <element signature="e#39#51#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,14 +853,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
+        <state relative-caret-position="1020">
           <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="748">
           <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
           <folding>
             <element signature="e#46#83#0#PHP" expanded="true" />
@@ -873,7 +870,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Mail/EmailVerificacion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="289">
           <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
         </state>
       </provider>
@@ -887,7 +884,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/enviarverificacionemail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="476">
           <caret line="34" column="36" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="36" />
           <folding>
             <element signature="e#28#59#0#PHP" expanded="true" />
@@ -897,7 +894,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/emails/emailverificacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="3162">
           <caret line="191" column="37" selection-start-line="191" selection-start-column="37" selection-end-line="191" selection-end-column="37" />
         </state>
       </provider>
@@ -912,14 +909,31 @@
     <entry file="file://$PROJECT_DIR$/resources/views/emails/emailconfirmacion.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="67" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="e#223#269#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="30" column="45" lean-forward="true" selection-end-line="46" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

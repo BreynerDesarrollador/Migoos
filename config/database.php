@@ -46,11 +46,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'localhost',
+            'host' => 'db4free.net',
             'port' => env('DB_PORT', '3306'),
-            'database' => 'id6411797_migoos',
-            'username' => 'id6411797_breynerdesarrollador',
-            'password' => 'desarrollador2018',
+            'database' => 'migoos',
+            'username' => 'breynerde',
+            'password' => 'breyner1995',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

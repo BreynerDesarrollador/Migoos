@@ -92,7 +92,7 @@ class HomeController extends Controller
     
         public function pruebacola(){
         try{
-            $user=User::all()->take(1);
+            $user=User::find(4);
             dispatch(new enviarverificacionemail($user));
             return view('emails.verificacion')->with(["correo"=>$user->email]);
         }catch (Excepcion $es){

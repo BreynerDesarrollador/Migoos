@@ -60,10 +60,6 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true,
-        "warmup": [
-        "php artisan config:cache",
-        "php artisan route:cache"
-    ],
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

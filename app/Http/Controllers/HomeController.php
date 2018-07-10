@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\enviarverificacionemail;
 use App\Mail\Prueba;
 use App\User;
 use Illuminate\Http\Request;

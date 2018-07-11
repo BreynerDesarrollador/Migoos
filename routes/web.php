@@ -19,7 +19,10 @@ Route::get('b/{any}', 'HomeController@migoos')->name('b/{any}')->where('any', '.
 
 Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider')->name('social.auth');
 Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
-Route::get('/verificaremail/{token}', 'Auth\RegisterController@verificaremail');
+
+Route::get('/registrarme', 'Auth\RegisterController@showRegistrationForm');
+Route::post('/registrarme', 'Auth\RegisterController@showRegistrationForm');
+Route::get('/verificaremail/{token}', 'Auth\RegisterController@register');
 
 Route::get('email',function (){
    return view('emails.emailverificacion')->with(['nombre'=>'Breyner Perez','email_token'=>'breyner@hotmail.com']);

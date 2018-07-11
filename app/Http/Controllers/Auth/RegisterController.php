@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Jobs\enviarverificacionemail;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -21,7 +24,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    //use RegistersUsers;
 
     /**
      * Where to redirect users after registration.
@@ -40,12 +43,66 @@ class RegisterController extends Controller
         $this->middleware('guest');
     }
 
+    public function showRegistrationForm()
+    {
+        return view('auth.register');
+    }
+
     /**
-     * Get a validator for an incoming registration request.
+     * Handle a registration request for the application.
      *
-     * @param  array $data
-     * @return \Illuminate\Contracts\Validation\Validator
+     * @param  \Illuminate\Http\Request $request
+     * @return \Illuminate\Http\Response
      */
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        //$this->guard()->login($user);
+
+        /*return $this->registered($request, $user)
+            ?: redirect($this->redirectPath());*/
+        dispatch(new enviarverificacionemail($user));
+        return view('emails.verificacion')->with(["correo"=>$user->email]);
+    }
+
+    public function verificaremail($token)
+    {
+        $user = User::where('email_token', $token)->first();
+        $user->verification = 1;
+        if ($user->save()) {
+            return view('emails.emailconfirmacion', ['user' => $user]);
+        }
+    }
+
+    /**
+     * Get the guard to be used during registration.
+     *
+     * @return \Illuminate\Contracts\Auth\StatefulGuard
+     */
+    protected function guard()
+    {
+        return Auth::guard();
+    }
+
+    /**
+     * The user has been registered.
+     *
+     * @param  \Illuminate\Http\Request $request
+     * @param  mixed $user
+     * @return mixed
+     */
+    protected function registered(Request $request, $user)
+    {
+        //
+        if (Auth::user()->verification == 0) {
+            Auth::logout();
+            return Redirect::back()->withErrors(['mensaje' => 'Hemos enviado un mensaje de confirmación al correo ingresado ' . $user->email . ', para verificar su información, gracias por registrarse en Migoos.'], 'default');
+        }
+    }
+
     protected function validator(array $data)
     {
         return Validator::make($data, [

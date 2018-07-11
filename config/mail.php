@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'mailtrap.io',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'smtp.mailtrap.io',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 2525,//env('MAIL_PORT', 587),
+    'port' => 25,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'desarrollador2@willitad.com',//env('MAIL_USERNAME'),
+    'username' => '6e39143385b768',//env('MAIL_USERNAME'),
 
-    'password' => 'breyner1995',//env('MAIL_PASSWORD'),
+    'password' => 'e8a48b65f2ea28',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

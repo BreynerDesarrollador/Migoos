@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'willitad.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'mail.willitad.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 465,//env('MAIL_PORT', 587),
+    'port' => 25,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => 'tls',//env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => 'ssl',//env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'info@willitad.com',//env('MAIL_USERNAME'),
+    'username' => 'desarrollador2@willitad.com',//env('MAIL_USERNAME'),
 
-    'password' => 'desarrollador2018',//env('MAIL_PASSWORD'),
+    'password' => 'breyner1995',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

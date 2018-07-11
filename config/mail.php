@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.mailtrap.io',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'willitad.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 25,//env('MAIL_PORT', 587),
+    'port' => 465,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => 'desarrollador2@willitad.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => 'Migoos',//env('MAIL_FROM_NAME', 'Example'),
+        'address' => 'info@migoos.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'name' => 'Migoos.co',//env('MAIL_FROM_NAME', 'Example'),
     ],
 
     /*
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => '6e39143385b768',//env('MAIL_USERNAME'),
+    'username' => 'info@willitad.com',//env('MAIL_USERNAME'),
 
-    'password' => 'e8a48b65f2ea28',//env('MAIL_PASSWORD'),
+    'password' => 'desarrollador2018',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

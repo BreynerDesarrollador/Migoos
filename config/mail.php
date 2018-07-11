@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'willitad.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'mail.willitad.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 995,//env('MAIL_PORT', 587),
+    'port' => 25,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => 'POP3',//env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => 'ssl',//env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------

@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => 'sparkpost',//env('MAIL_DRIVER', 'smtp'),
+    'driver' => 'smtp',//env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.sparkpostmail.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'mailtrap.io',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 587,//env('MAIL_PORT', 587),
+    'port' => 2525,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -86,7 +86,7 @@ return [
 
     'username' => 'desarrollador2@willitad.com',//env('MAIL_USERNAME'),
 
-    'password' => 'desarrollador2017',//env('MAIL_PASSWORD'),
+    'password' => 'breyner1995',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

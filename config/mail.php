@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => 465,//env('MAIL_PORT', 587),
+    'port' => 587,//env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'desarrollador2.willitad@gmail.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => 'infodesarrollo.willitad@gmail.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => 'Migoos',//env('MAIL_FROM_NAME', 'Example'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => 'ssl',//env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => 'tls',//env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'desarrollador2.willitad@gmail.com',//env('MAIL_USERNAME'),
+    'username' => 'infodesarrollo.willitad@gmail.com',//env('MAIL_USERNAME'),
 
-    'password' => 'desarrollador2017',//env('MAIL_PASSWORD'),
+    'password' => 'willitad2017',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

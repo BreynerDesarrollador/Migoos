@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'driver' => 'smtp',//env('MAIL_DRIVER', 'smtp'),
+    'driver' => 'sparkpost',//env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => 'smtp.gmail.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'smtp.sparkpostmail.com',//env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'infodesarrollo.willitad@gmail.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+        'address' => 'desarrollador2@willitad.com',//env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => 'Migoos',//env('MAIL_FROM_NAME', 'Example'),
     ],
 
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => 'infodesarrollo.willitad@gmail.com',//env('MAIL_USERNAME'),
+    'username' => 'desarrollador2@willitad.com',//env('MAIL_USERNAME'),
 
-    'password' => 'willitad2017',//env('MAIL_PASSWORD'),
+    'password' => 'desarrollador2017',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------

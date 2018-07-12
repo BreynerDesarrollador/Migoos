@@ -1,6 +1,6 @@
 <template>
-    <div class="row">
-        <section id="carousel" class="container-fluid">
+    <div>
+        <section id="carousel">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

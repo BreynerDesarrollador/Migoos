@@ -1,30 +1,33 @@
 <template>
     <div class="container-fluid">
-        <h2 class="enunciado text-center position-relative">Eventos populares en
-            <b>{{ciudadgeneral}}</b>
-        </h2>
+        <div class="container">
+            <h2 class="enunciado text-center position-relative">Eventos populares en
+                <b>{{ciudadgeneral}}</b>
+            </h2>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-3 col-lg-3"  v-for="da in datos">
-                <div class="card">
-                    <img class="card-img-top" :src="da.imagenpath+'thumbnail330/'+da.imagen" :alt="'Migoos en '+da.ciudad">
-                    <span class="poster-card__label">{{da.tipo=='GRATIS'?da.tipo:da.costo}}</span>
-                    <div class="card-body">
-                        <h5 class="card-title">{{da.nombre}}</h5>
-                        <p class="card-text text-truncate">
-                           {{da.direccion}}
-                        </p>
-                        <p class="card-text">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </p>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4"  v-for="da in datos">
+                    <div class="card">
+                        <img class="card-img-top" :src="da.imagenpath+'thumbnail330/'+da.imagen" :alt="'Migoos en '+da.ciudad">
+                        <span class="poster-card__label">{{da.tipo=='GRATIS'?da.tipo:da.costo}}</span>
+                        <div class="card-body">
+                            <h5 class="card-title">{{da.nombre}}</h5>
+                            <p class="card-text text-truncate">
+                                {{da.direccion}}
+                            </p>
+                            <p class="card-text">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted text-center">
+                            <i class="icon ion-ios-time"></i> <timeago :since="da.fechacreacion" locale="es-ES"></timeago>
+                        </div>
                     </div>
-                    <div class="card-footer text-muted text-center">
-                        <i class="icon ion-ios-time"></i> <timeago :since="da.fechacreacion" locale="es-ES"></timeago>
-                    </div>
+
                 </div>
-
             </div>
         </div>
+
     </div>
 </template>
 <script>

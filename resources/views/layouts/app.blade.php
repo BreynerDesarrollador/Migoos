@@ -10,13 +10,9 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
-<<<<<<< HEAD
-    <link href="{{asset('css/app.css')}}" rel="stylesheet">
+    <link href="{{mix('css/app.css')}}" rel="stylesheet">
     <link href="{{asset('css/principal.css')}}" rel="stylesheet">
-=======
-    <link href="/css/app.css" rel="stylesheet">
-    <link href="/css/principal.css" rel="stylesheet">
->>>>>>> 29b176fa922081da679500b6753d7c6f35aecb19
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
           crossorigin="anonymous">
@@ -43,7 +39,8 @@
 
             @guest
                 <li class="nav-item">
-                    <a class="nav-link" id="ingresar" href="#" data-toggle="modal" data-target="#exampleModalCenter"> Iniciar </a>
+                    <a class="nav-link" id="ingresar" href="#" data-toggle="modal" data-target="#exampleModalCenter">
+                        Iniciar </a>
                 </li>
             @else
                 <li class="nav-item dropdown">
@@ -69,11 +66,7 @@
 </nav>
 <body>
 <div id="app">
-
-
-    <div class="row">
-        @yield('content')
-    </div>
+@yield('content')
 
 @include('layouts.footer')
 <!-- Modal -->
@@ -91,10 +84,12 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <a href="{{ route('social.auth', 'facebook') }}" type="button" class="btn btn-primary btn-lg btn-block">
+                            <a href="{{ route('social.auth', 'facebook') }}" type="button"
+                               class="btn btn-primary btn-lg btn-block">
                                 <i class=" fab fa-facebook"></i> &nbsp; Facebook
                             </a>
-                            <a href="{{ route('social.auth', 'google') }}" type="button" class="btn btn-danger  btn-lg btn-block">
+                            <a href="{{ route('social.auth', 'google') }}" type="button"
+                               class="btn btn-danger  btn-lg btn-block">
                                 <i class="fab fa-google"></i> &nbsp; Google +
                             </a>
                         </div>
@@ -178,18 +173,17 @@
                         </div>
                     </div>
                 </div>
-            </div></div>
-
+            </div>
+        </div>
     </div>
-    </div>
-
+</div>
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="{{asset('/js/manifest.js')}}"></script>
-<script src="{{asset('/js/vendor.js')}}"></script>
-<script src="{{asset('/js/app.js')}}"></script>
+<script src="{{mix('/js/manifest.js')}}"></script>
+<script src="{{mix('/js/vendor.js')}}"></script>
+<script src="{{mix('/js/app.js')}}"></script>
 
 @yield('script')
 @if($errors->any())
@@ -200,4 +194,6 @@
     </script>
 @endif
 </body>
+
+
 </html>

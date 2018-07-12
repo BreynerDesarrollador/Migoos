@@ -40,13 +40,13 @@ class SocialAuthController extends Controller
                     'password' => bcrypt('123456789migoos'),
                     'avatar' => $social_user->avatar,
                     'type' => 1,
-                    'verification' => 0,
+                    'verification' => 1,
                 ]);
 
                 return $this->authAndRedirect($user); // Login y redirección
             }
         }catch (Excepcion $es){
-            $user= Socialite::driver('github')->userFromToken($token);
+            $user= Socialite::driver($provider)->userFromToken($token);
         }
     }
 

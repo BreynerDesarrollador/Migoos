@@ -10,8 +10,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Styles -->
+<<<<<<< HEAD
     <link href="{{asset('css/app.css')}}" rel="stylesheet">
     <link href="{{asset('css/principal.css')}}" rel="stylesheet">
+=======
+    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/principal.css" rel="stylesheet">
+>>>>>>> 29b176fa922081da679500b6753d7c6f35aecb19
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
           crossorigin="anonymous">

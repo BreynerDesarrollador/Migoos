@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\enviarverificacionemail;
 use App\Mail\Prueba;
 use App\User;
 use Illuminate\Http\Request;
@@ -84,6 +85,16 @@ class HomeController extends Controller
     public function buscareventociudad(){
         try{
 
+        }catch (Excepcion $es){
+            throw new $es;
+        }
+    }
+    
+        public function pruebacola(){
+        try{
+            $user=User::find(1);
+            dispatch(new enviarverificacionemail($user));
+            return view('emails.verificacion')->with(["correo"=>$user->email]);
         }catch (Excepcion $es){
             throw new $es;
         }

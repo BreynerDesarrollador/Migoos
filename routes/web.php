@@ -21,8 +21,8 @@ Route::get('auth/{provider}', 'Auth\SocialAuthController@redirectToProvider')->n
 Route::get('auth/{provider}/callback', 'Auth\SocialAuthController@handleProviderCallback');
 
 Route::get('/registrarme', 'Auth\RegisterController@showRegistrationForm');
-Route::post('/registrarme', 'Auth\RegisterController@showRegistrationForm');
-Route::get('/verificaremail/{token}', 'Auth\RegisterController@register');
+Route::post('/registrarme', 'Auth\RegisterController@register');
+Route::get('/verificaremail/{token}', 'Auth\RegisterController@verificaremail');
 
 Route::get('email',function (){
    return view('emails.emailverificacion')->with(['nombre'=>'Breyner Perez','email_token'=>'breyner@hotmail.com']);

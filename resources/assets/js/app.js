@@ -101,6 +101,7 @@ Vue.component('Eventos', eventos);
 Vue.component('LoaderSpinner', bounceSpinner);
 Vue.component('Autocompletar', Autocomplete);
 Vue.component('App', require('./components/app.vue'));
+Vue.component('EventosHoyManana', require('./components/eventoshoymanana.vue'));
 
 const app = new Vue({
     router

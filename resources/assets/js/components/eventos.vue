@@ -4,7 +4,9 @@
             <h2 class="enunciado text-center position-relative">Eventos populares en
                 <b>{{ciudadgeneral}}</b>
             </h2>
-
+            <div class="row">
+                <eventos-hoy-manana></eventos-hoy-manana>
+            </div>
             <div class="row">
                 <div class="col-sm-12 col-md-4 col-lg-4"  v-for="da in datos">
                     <div class="card">

@@ -28,7 +28,10 @@ Route::get('/pruebacola', 'HomeController@pruebacola');
 Route::get('email',function (){
    return view('emails.emailverificacion')->with(['nombre'=>'Breyner Perez','email_token'=>'breyner@hotmail.com']);
 });
-//Route::get('/app/{ciudad}', 'HomeController@app')->name('app');
+
+
+//Consultar eventos para hoy y mañana.
+Route::get('/eventos.hoymanana', 'HomeController@eventoshoymanana')->name('eventos.hoymanana');
 
 Auth::routes();
 

@@ -54,9 +54,9 @@ class HomeController extends Controller
     {
         try {
 
-            $latitud=Input::get('lat');
-            $longitud=Input::get('long');
-            $accuracy=$request->input('accuracy');
+            $latitud = Input::get('lat');
+            $longitud = Input::get('long');
+            $accuracy = $request->input('accuracy');
             $dato = DB::select('call sp_eventos(0);');
 
             return response()->json($dato);
@@ -65,7 +65,8 @@ class HomeController extends Controller
         }
     }
 
-    public function cargarcombos(){
+    public function cargarcombos()
+    {
         $operacion = Input::get('operacion');
         $buscar = Input::get('buscar');
         try {
@@ -75,28 +76,42 @@ class HomeController extends Controller
             throw $es;
         }
     }
+
     public function cargarciudades(Request $request)
     {
-        $buscar=$request->input('keyword');
-        $datos=DB::select("call  sp_cargarciudad('$buscar')");
+        $buscar = $request->input('keyword');
+        $datos = DB::select("call  sp_cargarciudad('$buscar')");
         return response()->json($datos);
-        
-    }
-    public function buscareventociudad(){
-        try{
 
-        }catch (Excepcion $es){
+    }
+
+    public function buscareventociudad()
+    {
+        try {
+
+        } catch (Excepcion $es) {
             throw new $es;
         }
     }
-    
-        public function pruebacola(){
-        try{
-            $user=User::find(1);
+
+    public function pruebacola()
+    {
+        try {
+            $user = User::find(1);
             dispatch(new enviarverificacionemail($user));
-            return view('emails.verificacion')->with(["correo"=>$user->email]);
-        }catch (Excepcion $es){
+            return view('emails.verificacion')->with(["correo" => $user->email]);
+        } catch (Excepcion $es) {
             throw new $es;
+        }
+    }
+
+    public function eventoshoymanana(Request $request)
+    {
+        try {
+            $datos = DB::select('call sp_eventoshoymanana();');
+            return response()->json($datos);
+        } catch (\Exception $es) {
+            throw $es;
         }
     }
 }

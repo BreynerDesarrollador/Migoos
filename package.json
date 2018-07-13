@@ -33,6 +33,8 @@
         "select2-bootstrap4-theme": "^1.0.0",
         "toastr": "^2.1.4",
         "v-tooltip": "^2.0.0-rc.33",
+        "vue-infinite-loading": "^2.3.1",
+        "vue-progressbar": "^0.7.5",
         "vue-router": "^3.0.1",
         "vue-spinner": "^1.0.3",
         "vue-timeago": "^4.0.2",

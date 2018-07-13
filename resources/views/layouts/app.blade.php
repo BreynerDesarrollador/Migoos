@@ -28,13 +28,15 @@
         <i class="fas fa-bars"></i>
     </button>
     <div>
-        <a class="navbar-brand" href="#">
-            <img class="brand" src="img/brand.png" alt=""> Migoos</a>
+        <a class="navbar-brand" href="{{url('/')}}">
+            <img class="brand" src="{{asset('img/brand.png')}}" alt="Migoos plataforma de eventos">
+            Migoos
+        </a>
     </div>
     <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Crear un Evento</a>
+                <a class="nav-link" href="#!">Crear un Evento</a>
             </li>
 
             @guest
@@ -177,6 +179,14 @@
         </div>
     </div>
 </div>
+<div class="v-spinner preloader-background">
+    <div class="v-bounce v-bounce1" style="height: 60px; width: 60px; position: relative;">
+        <div class="v-bounce v-bounce2"
+             style="background-color: rgb(100, 221, 23); height: 60px; width: 60px; border-radius: 100%; opacity: 0.6; position: absolute; top: 0px; left: 0px;"></div>
+        <div class="v-bounce v-bounce3"
+             style="background-color: rgb(100, 221, 23); height: 60px; width: 60px; border-radius: 100%; opacity: 0.6; position: absolute; top: 0px; left: 0px;"></div>
+    </div>
+</div>
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -184,7 +194,11 @@
 <script src="{{mix('/js/manifest.js')}}"></script>
 <script src="{{mix('/js/vendor.js')}}"></script>
 <script src="{{mix('/js/app.js')}}"></script>
-
+<script>
+    $(document).ready(function () {
+        $(".v-spinner").hide();
+    });
+</script>
 @yield('script')
 @if($errors->any())
     <script>

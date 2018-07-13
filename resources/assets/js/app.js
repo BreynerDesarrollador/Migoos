@@ -12,6 +12,7 @@ import bounceSpinner from 'vue-spinner/src/BounceLoader.vue'
 import VTooltip from 'v-tooltip'
 import VueTimeago from 'vue-timeago'
 import Autocomplete from './components/autocomplete.vue'
+import VueProgressBar from 'vue-progressbar'
 
 require('./bootstrap');
 require('toastr');
@@ -20,6 +21,22 @@ require('jquery-validation');
 require('jquery-mask-plugin');
 
 window.Vue = require('vue');
+
+const options = {
+    color: '#1976d2',
+    failedColor: '#e53935',
+    thickness: '3px',
+    transition: {
+        speed: '0.2s',
+        opacity: '0.6s',
+        termination: 300
+    },
+    autoRevert: true,
+    location: 'top',
+    inverse: false
+}
+
+Vue.use(VueProgressBar, options);
 Vue.use(VueRouter);
 Vue.use(VTooltip);
 Vue.use(VueGoogleMaps, {

@@ -26,6 +26,11 @@
 
                 </div>
             </div>
+            <infinite-loading @infinite="cargareventos" ref="infiniteLoading">
+                    <span slot="no-more" class="alert alert-info">
+
+                    </span>
+            </infinite-loading>
         </div>
 
     </div>
@@ -33,8 +38,13 @@
 <script>
     import axios from 'axios'
     import toastr from 'toastr'
+    import InfiniteLoading from 'vue-infinite-loading';
+
     var es;
     export default{
+        components: {
+            InfiniteLoading
+        },
         data: function () {
             return {
                 datos: [],
@@ -44,17 +54,19 @@
         },
         mounted() {
             es=this;
-            this.cargareventos(0,0,0);
+            //this.cargareventos(0,0,0);
             this.ciudadgeneral=ciudadgeneral;
         },
         methods: {
-            cargareventos (lat,long,accuracy){
-                axios.post('/cargareventos',{"lat":lat,"long":long,"accuracy":accuracy})
+            cargareventos ($state){
+                axios.post('/cargareventos',{"lat":0,"long":0,"accuracy":0})
                     .then(data => {
+                        $state.loaded();
                         this.datos=data.data;
-                        //toastr.success('Error',data.data.latitud);
+                        $state.complete();
                     }).catch(error => {
                         toastr.warning('Error',error.response.data.message);
+                        $state.complete();
                     });
             },
             ubicacionactual() {

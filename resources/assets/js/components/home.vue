@@ -1,5 +1,6 @@
 <template>
     <div>
+        <!-- <loader-spinner class="preloader-background" :loading="loading" :color="'#64dd17'"></loader-spinner> -->
         <section id="carousel">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -82,14 +83,20 @@
 
 <script>
     import toastr from 'toastr'
-
+    var es;
     export default {
         data: function () {
             return {
                 buscar:'',
                 ciudad:'',
-                fecha:''
+                fecha:'',
             }
+        },
+        mounted() {
+
+        },
+        created() {
+            //this.loading=false;
         },
         methods: {
             agregarfecha(param) {
@@ -108,3 +115,9 @@
 
     }
 </script>
+
+<style>
+    .preloader-background{
+        background-color: white;
+    }
+</style>

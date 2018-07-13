@@ -36,7 +36,7 @@ Route::get('mail', 'HomeController@mail');
 Route::group(['middleware' => ['authuser']], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::get('/app/{any}', 'AdminController@index')
-        ->middleware('is_admin')
+        ->middleware(\App\Http\Middleware\isAdmin::class)
         ->name('app.admin')->where('any', '.*');
     #cargar combos
 

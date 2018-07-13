@@ -153,7 +153,7 @@ class LoginController extends Controller
     {
         //
         if(Auth::user()->verification==1){
-            if(Auth::user()->isAdmin()){
+            if(Auth::user()->type==0){
                 return redirect('/app/home');
             }else{
                 return redirect('/home');

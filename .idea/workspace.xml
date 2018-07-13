@@ -5,19 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/principal.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/principal.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/eventos.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/eventos.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/assets/js/components/home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/assets/js/components/home.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -103,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
+            <state relative-caret-position="112">
+              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -194,13 +181,13 @@
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/SocialAuthController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" />
-        <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
         <option value="$PROJECT_DIR$/resources/assets/js/components/eventos.vue" />
         <option value="$PROJECT_DIR$/resources/assets/js/components/app.vue" />
         <option value="$PROJECT_DIR$/public/css/principal.css" />
         <option value="$PROJECT_DIR$/resources/assets/js/components/home.vue" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+        <option value="$PROJECT_DIR$/config/database.php" />
       </list>
     </option>
   </component>
@@ -311,7 +298,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="160" />
     <option name="height" value="39" />
   </component>
@@ -607,12 +594,12 @@
       <workItem from="1531333187963" duration="1281000" />
       <workItem from="1531419734128" duration="7583000" />
       <workItem from="1531433813760" duration="1393000" />
-      <workItem from="1531493000469" duration="2990000" />
+      <workItem from="1531493000469" duration="3619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183625000" />
+    <option name="totallyTimeSpent" value="184254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -925,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -979,13 +959,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="31" column="97" selection-start-line="31" selection-start-column="97" selection-end-line="31" selection-end-column="97" />
+        <state relative-caret-position="112">
+          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="45" lean-forward="true" selection-start-line="43" selection-start-column="45" selection-end-line="43" selection-end-column="45" />
         </state>
       </provider>
     </entry>

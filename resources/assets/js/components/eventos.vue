@@ -11,14 +11,14 @@
                 <div class="col-sm-12 col-md-4 col-lg-4"  v-for="da in datos">
                     <div class="card">
                         <img class="card-img-top" :src="da.imagenpath+'thumbnail330/'+da.imagen" :alt="'Migoos en '+da.ciudad">
-                        <span class="poster-card__label">{{da.tipo=='GRATIS'?da.tipo:da.costo}}</span>
+                        <span class="poster-card__label">{{da.tipo=='GRATIS'?da.tipo:convertirmoneda(da.costo)}}</span>
                         <div class="card-body">
                             <h5 class="card-title">{{da.nombre}}</h5>
                             <p class="card-text text-truncate">
                                 {{da.direccion}}
                             </p>
                             <p class="card-text">
-                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <h4><i class="icon ion-ios-calendar"></i>  <small class="text-muted">{{convertirfecha(da.fecha)}}</small></h4>
                             </p>
                         </div>
                         <div class="card-footer text-muted text-center">
@@ -86,7 +86,15 @@
                     es.cargareventos('','');
                 }
 
-            }
+            },
+            convertirfecha(fecha) {
+                var datos=fechastring(fecha);
+                return datos.nombre_dia+' '+datos.dia_mes+' de '+datos.nombre_mes+', '+datos.ano;
+
+            },
+            convertirmoneda(costo) {
+                return convertirmoneda(costo);
+            },
         }
     }
 </script>

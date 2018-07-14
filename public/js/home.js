@@ -15,22 +15,10 @@ var localizacion = [];
 var geocoder;
 var _token = "";
 //Se cargar los complementos cuando la pagina este lista.
-$(document).ready(function () {
-
-    /*$('[data-toggle="tooltip"]').tooltip();*/
-
-    //Mostramos la imagen de cargando.
+/*$(document).ready(function () {
     $("#div_cargandoevento").show();
-    //FUncion que muestra y oculta el menu.
-    /*$("#menu-toggle").click(function (e) {
-     e.preventDefault();
-     $("#wrapper").toggleClass("toggled");
-     });*/
-    //Funcion que carga los eventos.
     eventos.cargar();
-
-
-});
+});*/
 
 //Muestra la fecha en string.
 eventos.mostrarfechastring = function (fecha) {

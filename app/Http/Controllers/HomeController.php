@@ -127,7 +127,7 @@ class HomeController extends Controller
                 $country_code = curl_exec($ch);
                 session(['event_ubicacion' => $country_code]);// = $country_code;
             }
-            //return session('event_ubicacion');
+            return session('event_ubicacion');
         } catch (Excepcion $es) {
             throw $es;
         }

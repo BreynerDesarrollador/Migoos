@@ -50,8 +50,8 @@
       <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="125" column="78" lean-forward="true" selection-start-line="125" selection-start-column="78" selection-end-line="125" selection-end-column="78" />
+            <state relative-caret-position="109">
+              <caret line="126" column="61" selection-start-line="126" selection-start-column="57" selection-end-line="126" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -245,7 +245,7 @@
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="160" />
     <option name="height" value="39" />
   </component>
@@ -520,12 +520,12 @@
       <workItem from="1531493000469" duration="10739000" />
       <workItem from="1531519941947" duration="2860000" />
       <workItem from="1531581034074" duration="4853000" />
-      <workItem from="1531752877800" duration="12155000" />
+      <workItem from="1531752877800" duration="12560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211242000" />
+    <option name="totallyTimeSpent" value="211647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -903,8 +903,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="125" column="78" lean-forward="true" selection-start-line="125" selection-start-column="78" selection-end-line="125" selection-end-column="78" />
+        <state relative-caret-position="109">
+          <caret line="126" column="61" selection-start-line="126" selection-start-column="57" selection-end-line="126" selection-end-column="61" />
         </state>
       </provider>
     </entry>

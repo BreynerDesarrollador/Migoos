@@ -121,9 +121,9 @@ class HomeController extends Controller
     {
         try {
             if (!session('event_ubicacion')) {
-                $user_ip = $_SERVER['REMOTE_ADDR'];
+                $user_ip = $this->getRealIP();
                 //http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd&output=json
-                $ch = curl_init("http://ipapi.co/" . $_SERVER['REMOTE_ADDR'] . "/json");
+                $ch = curl_init("https://ipapi.co/" . $user_ip . "/json");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 $country_code = curl_exec($ch);
                 session(['event_ubicacion' => $country_code]);// = $country_code;
@@ -132,5 +132,34 @@ class HomeController extends Controller
         } catch (Excepcion $es) {
             throw $es;
         }
+    }
+    function getRealIP()
+    {
+
+        if (isset($_SERVER["HTTP_CLIENT_IP"]))
+        {
+            return $_SERVER["HTTP_CLIENT_IP"];
+        }
+        elseif (isset($_SERVER["HTTP_X_FORWARDED_FOR"]))
+        {
+            return $_SERVER["HTTP_X_FORWARDED_FOR"];
+        }
+        elseif (isset($_SERVER["HTTP_X_FORWARDED"]))
+        {
+            return $_SERVER["HTTP_X_FORWARDED"];
+        }
+        elseif (isset($_SERVER["HTTP_FORWARDED_FOR"]))
+        {
+            return $_SERVER["HTTP_FORWARDED_FOR"];
+        }
+        elseif (isset($_SERVER["HTTP_FORWARDED"]))
+        {
+            return $_SERVER["HTTP_FORWARDED"];
+        }
+        else
+        {
+            return $_SERVER["REMOTE_ADDR"];
+        }
+
     }
 }

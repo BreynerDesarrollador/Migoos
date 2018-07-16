@@ -29,16 +29,19 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $this->datosusuario();
         return view('home');
     }
 
     public function migoos()
     {
+        $this->datosusuario();
         return view('migoos');
     }
 
     public function welcome()
     {
+        $this->datosusuario();
         return view('welcome');
     }
 
@@ -53,11 +56,10 @@ class HomeController extends Controller
     public function cargareventos(Request $request)
     {
         try {
-
-            $latitud = Input::get('lat');
-            $longitud = Input::get('long');
-            $accuracy = $request->input('accuracy');
-            $dato = DB::select('call sp_eventos(0);');
+            $datos=json_decode(session('event_ubicacion'),true);
+            $ciudad=!empty($datos['city'])?$datos['city']:'';
+            //return response()->json(session()->all());
+            $dato = DB::select("call sp_eventos(0,'$ciudad');");
 
             return response()->json($dato);
         } catch (Exception $ex) {
@@ -118,26 +120,14 @@ class HomeController extends Controller
     public function datosusuario()
     {
         try {
-// Comprobamos si ya tenemos la variable de sesión guardada, o
-// más concretamente, le pedimos a nuestro script que sólo
-// ejecute este bloque de código si NO está asignada.
-            if (!session('country_code')) {
-                // Cogemos la IP del usuario del array que nos pasa el servidor
-                $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-// Iniciamos el handler de CURL y le pasamos la URL de la API externa
-                $ch = curl_init("http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd");
-
-// Con este comando le pedimos a CURL que, en vez de mostrar
-// el resultado en pantalla, nos lo devuelva como una variable
+            if (!session('event_ubicacion')) {
+                $user_ip = $_SERVER['REMOTE_ADDR'];
+                $ch = curl_init("http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd&output=json");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-// Y simplemente hacemos la petición HTTP.
                 $country_code = curl_exec($ch);
-
-// Guardamos la variable en $_SESSION
-                session(['country_code' => $country_code]);// = $country_code;
+                session(['event_ubicacion' => $country_code]);// = $country_code;
             }
-            echo session('country_code');
+            //return session('event_ubicacion');
         } catch (Excepcion $es) {
             throw $es;
         }

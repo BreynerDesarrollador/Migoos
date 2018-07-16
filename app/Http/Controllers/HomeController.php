@@ -122,7 +122,8 @@ class HomeController extends Controller
         try {
             if (!session('event_ubicacion')) {
                 $user_ip = $_SERVER['REMOTE_ADDR'];
-                $ch = curl_init("http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd&output=json");
+                //http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd&output=json
+                $ch = curl_init("http://ipapi.co/json");
                 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
                 $country_code = curl_exec($ch);
                 session(['event_ubicacion' => $country_code]);// = $country_code;

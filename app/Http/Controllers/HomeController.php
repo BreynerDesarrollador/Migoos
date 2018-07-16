@@ -138,7 +138,7 @@ class HomeController extends Controller
 // Guardamos la variable en $_SESSION
                 session(['country_code'=>$country_code]);// = $country_code;
             }
-            return response()->json(session('country_code'));
+            echo session('country_code');
         } catch (Excepcion $es) {
             throw $es;
         }

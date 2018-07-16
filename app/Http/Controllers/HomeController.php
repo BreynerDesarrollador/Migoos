@@ -124,7 +124,7 @@ class HomeController extends Controller
             if (!session('country_code')) {
                 // Cogemos la IP del usuario del array que nos pasa el servidor
                 $user_ip = $_SERVER['REMOTE_ADDR'];
-
+return $user_ip;
 // Iniciamos el handler de CURL y le pasamos la URL de la API externa
                 $ch = curl_init("http://api.hostip.info/country.php?ip=$user_ip");
 

@@ -124,9 +124,8 @@ class HomeController extends Controller
             if (!session('country_code')) {
                 // Cogemos la IP del usuario del array que nos pasa el servidor
                 $user_ip = $_SERVER['REMOTE_ADDR'];
-return $user_ip;
 // Iniciamos el handler de CURL y le pasamos la URL de la API externa
-                $ch = curl_init("http://api.hostip.info/country.php?ip=$user_ip");
+                $ch = curl_init("http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd");
 
 // Con este comando le pedimos a CURL que, en vez de mostrar
 // el resultado en pantalla, nos lo devuelva como una variable
@@ -136,7 +135,7 @@ return $user_ip;
                 $country_code = curl_exec($ch);
 
 // Guardamos la variable en $_SESSION
-                session(['country_code'=>$country_code]);// = $country_code;
+                session(['country_code' => $country_code]);// = $country_code;
             }
             echo session('country_code');
         } catch (Excepcion $es) {

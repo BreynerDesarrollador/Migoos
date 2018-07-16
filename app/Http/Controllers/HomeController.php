@@ -123,7 +123,7 @@ class HomeController extends Controller
 // ejecute este bloque de código si NO está asignada.
             if (!session('country_code')) {
                 // Cogemos la IP del usuario del array que nos pasa el servidor
-                $user_ip = $_SERVER['REMOTE_ADDR'];
+                $user_ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
 // Iniciamos el handler de CURL y le pasamos la URL de la API externa
                 $ch = curl_init("http://api.ipstack.com/$user_ip?access_key=37ada1cf3258ff604438208b0c5091bd");
 

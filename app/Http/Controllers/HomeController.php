@@ -118,21 +118,27 @@ class HomeController extends Controller
     public function datosusuario()
     {
         try {
-// Cogemos la IP del usuario del array que nos pasa el servidor
-            $user_ip = $_SERVER['REMOTE_ADDR'];
+// Comprobamos si ya tenemos la variable de sesión guardada, o
+// más concretamente, le pedimos a nuestro script que sólo
+// ejecute este bloque de código si NO está asignada.
+            if (!session('country_code')) {
+                // Cogemos la IP del usuario del array que nos pasa el servidor
+                $user_ip = $_SERVER['REMOTE_ADDR'];
 
 // Iniciamos el handler de CURL y le pasamos la URL de la API externa
-            $ch = curl_init("http://api.hostip.info/country.php?ip=$user_ip&position=true");
+                $ch = curl_init("http://api.hostip.info/country.php?ip=$user_ip");
 
 // Con este comando le pedimos a CURL que, en vez de mostrar
 // el resultado en pantalla, nos lo devuelva como una variable
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 // Y simplemente hacemos la petición HTTP.
-            $datos = curl_exec($ch);
+                $country_code = curl_exec($ch);
 
-// Y para muestra, un botón, vamos a probar que funciona bien:
-            return response()->json($datos);
+// Guardamos la variable en $_SESSION
+                session(['country_code'=>$country_code]);// = $country_code;
+            }
+            return response()->json(session('country_code'));
         } catch (Excepcion $es) {
             throw $es;
         }

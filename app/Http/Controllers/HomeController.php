@@ -114,4 +114,27 @@ class HomeController extends Controller
             throw $es;
         }
     }
+
+    public function datosusuario()
+    {
+        try {
+// Cogemos la IP del usuario del array que nos pasa el servidor
+            $user_ip = $_SERVER['REMOTE_ADDR'];
+
+// Iniciamos el handler de CURL y le pasamos la URL de la API externa
+            $ch = curl_init("http://api.hostip.info/country.php?ip=$user_ip&position=true");
+
+// Con este comando le pedimos a CURL que, en vez de mostrar
+// el resultado en pantalla, nos lo devuelva como una variable
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// Y simplemente hacemos la petición HTTP.
+            $datos = curl_exec($ch);
+
+// Y para muestra, un botón, vamos a probar que funciona bien:
+            return response()->json($datos);
+        } catch (Excepcion $es) {
+            throw $es;
+        }
+    }
 }

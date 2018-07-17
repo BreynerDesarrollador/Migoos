@@ -17,7 +17,8 @@
           integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
           crossorigin="anonymous">
     <script>
-        window.ciudadgeneral = 'Cartagena, Bolivar, Colombia';
+        window.ciudadgeneral = 'Cartagena, Colombia';
+        window.migoosevento = {!! json_encode(json_decode(session('event_ubicacion'),true)) !!};
     </script>
 </head>
 
@@ -196,6 +197,9 @@
 <script src="{{mix('/js/vendor.js')}}"></script>
 <script src="{{mix('/js/app.js')}}"></script>
 <script>
+    window.Laravel = {!! json_encode([
+            'csrfToken' => csrf_token(),
+        ]) !!};
     $(document).ready(function () {
         $(".v-spinner").hide();
     });

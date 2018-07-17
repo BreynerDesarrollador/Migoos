@@ -84,7 +84,6 @@ class HomeController extends Controller
         $buscar = $request->input('keyword');
         $datos = DB::select("call  sp_cargarciudad('$buscar')");
         return response()->json($datos);
-
     }
 
     public function buscareventociudad()

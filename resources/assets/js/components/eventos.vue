@@ -64,7 +64,7 @@
         mounted() {
             es = this;
             //this.cargareventos(0,0,0);
-            this.ciudadgeneral = window.migoosevento.city != undefined ? window.migoosevento.city != '' && window.migoosevento.city != null? window.migoosevento.city+', '+window.migoosevento.country:ciudadgeneral : ciudadgeneral;
+            this.ciudadgeneral = window.migoosevento.city != undefined ? window.migoosevento.city != '' && window.migoosevento.city != null? window.migoosevento.city+', '+window.migoosevento.country_name:ciudadgeneral : ciudadgeneral;
             $('input[autocomplete=off]').val(this.ciudadgeneral);
             },
         methods: {

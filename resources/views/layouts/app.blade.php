@@ -39,7 +39,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="#!">Crear un Evento</a>
             </li>
-
+ <li class="nav-item">
+                <a class="nav-link" href="#!">Prueba</a>
+            </li>
             @guest
                 <li class="nav-item">
                     <a class="nav-link" id="ingresar" href="#" data-toggle="modal" data-target="#exampleModalCenter">

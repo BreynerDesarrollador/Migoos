@@ -279,6 +279,9 @@
             </div>
         </div>
     </div>
+    <div>
+    <h1>BREYNER PEREZ</h1>
+    </div>
 @section('script')
     <script type="text/javascript" src="{{asset('js/home.js')}}"></script>
     <script type="text/javascript">
